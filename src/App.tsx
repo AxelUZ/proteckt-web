@@ -1,8 +1,17 @@
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
+
 function App() {
   return (
-    <h1 className="text-4xl font-bold text-center mt-20">
-      Proteckt Website
-    </h1>
+    <>
+      <Header />
+
+      <main>
+        {/* Aquí irá el contenido de la página */}
+      </main>
+
+      <Footer />
+    </>
   );
 }
 

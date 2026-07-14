@@ -1,11 +1,21 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700&display=swap");
 
-html,
-body,
-#root {
-  min-height: 100%;
+@theme {
+  /* Fonts */
+  --font-heading: "Anton", sans-serif;
+  --font-body: "Poppins", sans-serif;
+
+  /* Colors */
+  --color-primary: #166a2d;
+  --color-secondary: #1b6630;
+  --color-accent: #309737;
+  --color-hover: #2d9e35;
+  --color-background: #f3f5f9;
 }
 
 body {
   margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-background);
 }
