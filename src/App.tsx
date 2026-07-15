@@ -1,5 +1,6 @@
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
+import Hero from './components/home/Hero';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <Header />
 
       <main>
-        {/* Aquí irá el contenido de la página */}
+        <Hero/>
       </main>
 
       <Footer />
