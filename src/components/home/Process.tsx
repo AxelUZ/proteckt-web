@@ -1,31 +1,36 @@
+import IconSearch from "../../assets/images/IconSearch.svg";
+import IconTube from "../../assets/images/IconTube.svg";
+import IconProtection from "../../assets/images/IconProtection.svg";
+import IconCalendar from "../../assets/images/IconCalendar.svg";
+
 const steps = [
   {
     number: "01",
     title: "Inspección",
     description:
       "Evaluamos tu propiedad para identificar el tipo de plaga, el nivel de infestación y los puntos de acceso.",
-    icon: "h",
+    icon: IconSearch,
   },
   {
     number: "02",
     title: "Tratamiento",
     description:
       "Aplicamos tratamientos profesionales utilizando productos seguros y altamente efectivos.",
-    icon: "o",
+    icon: IconTube,
   },
   {
     number: "03",
     title: "Prevención",
     description:
       "Implementamos medidas preventivas para reducir el riesgo de futuras infestaciones.",
-    icon: "o",
+    icon: IconProtection,
   },
   {
     number: "04",
     title: "Seguimiento",
     description:
       "Realizamos seguimiento y brindamos recomendaciones para mantener tu espacio protegido.",
-    icon: "o",
+    icon: IconCalendar,
   },
 ];
 
@@ -56,7 +61,6 @@ function Process() {
 
           <div className="grid gap-14 lg:grid-cols-4">
             {steps.map((step) => {
-              const Icon = step.icon;
 
               return (
                 <div key={step.number} className="group relative">
@@ -79,10 +83,18 @@ function Process() {
                         group-hover:-translate-y-1
                       "
                     >
-                      <Icon
-                       // size={30}
-                       // className="text-primary transition-colors duration-300 group-hover:text-white"
-                      />
+                      <img
+                        src={step.icon}
+                        alt={step.title}
+                        className="
+                            h-8
+                            w-8
+                            transition-all
+                            duration-300
+                            filter-[invert(24%)_sepia(67%)_saturate(787%)_hue-rotate(84deg)_brightness(92%)_contrast(90%)]
+                            group-hover:filter-[invert(100%)]
+                        "
+                        />
                     </div>
 
                     <span
