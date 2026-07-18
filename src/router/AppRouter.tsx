@@ -5,6 +5,8 @@ import Footer from "../components/layout/Footer";
 
 import Hero from "../components/home/Hero";
 import Services from "../components/home/Services";
+import WhyProteckt from "../components/home/WhyProteckt";
+import Process from "../components/home/Process";
 
 function HomePage() {
   return (
@@ -14,6 +16,8 @@ function HomePage() {
       <main>
         <Hero />
         <Services />
+        <WhyProteckt/>
+        <Process/>
       </main>
 
       <Footer />
