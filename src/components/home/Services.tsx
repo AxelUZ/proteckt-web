@@ -3,7 +3,7 @@ import ServiceCard from "../ui/ServiceCard";
 import iconCockroach from "../../assets/images/iconCockroach.svg";
 import iconMouse from "../../assets/images/iconMouse.svg";
 import iconAnt from "../../assets/images/iconAnt.svg";
-import iconChinche from "../../assets/images/iconchinche.svg";
+import iconChinche from "../../assets/images/iconChinche.svg";
 import iconSpider from "../../assets/images/iconSpider.svg";
 import iconFumigacion from "../../assets/images/iconFumigacion.svg";
 
