@@ -7,6 +7,7 @@ import Hero from "../components/home/Hero";
 import Services from "../components/home/Services";
 import WhyProteckt from "../components/home/WhyProteckt";
 import Process from "../components/home/Process";
+import Testimonials from "../components/home/Testimonials";
 
 function HomePage() {
   return (
@@ -18,6 +19,7 @@ function HomePage() {
         <Services />
         <WhyProteckt/>
         <Process/>
+        <Testimonials/>
       </main>
 
       <Footer />
