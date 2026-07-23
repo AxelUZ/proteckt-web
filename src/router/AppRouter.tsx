@@ -8,6 +8,7 @@ import Services from "../components/home/Services";
 import WhyProteckt from "../components/home/WhyProteckt";
 import Process from "../components/home/Process";
 import Testimonials from "../components/home/Testimonials";
+import FAQ from "../components/home/FAQ";
 
 function HomePage() {
   return (
@@ -20,6 +21,7 @@ function HomePage() {
         <WhyProteckt/>
         <Process/>
         <Testimonials/>
+        <FAQ/>
       </main>
 
       <Footer />
