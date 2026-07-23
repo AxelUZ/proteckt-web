@@ -9,6 +9,7 @@ import WhyProteckt from "../components/home/WhyProteckt";
 import Process from "../components/home/Process";
 import Testimonials from "../components/home/Testimonials";
 import FAQ from "../components/home/FAQ";
+import CTA from "../components/home/CTA";
 
 function HomePage() {
   return (
@@ -22,6 +23,7 @@ function HomePage() {
         <Process/>
         <Testimonials/>
         <FAQ/>
+        <CTA/>
       </main>
 
       <Footer />
