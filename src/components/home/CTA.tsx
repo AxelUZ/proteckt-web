@@ -26,24 +26,27 @@ export default function CTA() {
 
         <div className="flex w-full max-w-sm flex-col gap-5">
 
-          <button
+          <a
+            href="https://wa.link/wwikda"
+            target="_blank"
+            rel="noopener noreferrer"
             className="
-              cursor-pointer
+              flex
+              justify-center
               rounded-xl
               bg-white
               px-8
-              py-5
+              py-4
               font-semibold
               text-primary
               transition-all
               duration-300
               hover:-translate-y-1
               hover:shadow-2xl
-              active:translate-y-0
             "
           >
-            Agenda tu inspección gratuita
-          </button>
+            Solicitar inspección
+          </a>
 
           <button
             className="
@@ -54,7 +57,7 @@ export default function CTA() {
               justify-center
               gap-3
               rounded-xl
-              border
+              border-3
               border-white/20
               px-8
               py-5
@@ -77,10 +80,11 @@ export default function CTA() {
                 transition-transform
                 duration-300
                 group-hover:scale-110
+                invert
               "
             />
 
-            Llámanos: (686) 000 0000
+            Llámanos: (686) 393 9561
           </button>
 
         </div>

@@ -31,20 +31,20 @@ function WhyProteckt() {
       icon: IconDone,
     },
     {
-      title: "Más de 10 años de experiencia",
+      title: "Más de 5 años de experiencia",
       description:
-        "Décadas de experiencia protegiendo hogares y empresas en Baja California.",
+        "Años de experiencia protegiendo hogares y empresas en Baja California.",
       icon: IconTrophy,
     },
   ];
 
   return (
-    <section className="bg-[#F5FAF6] py-28">
+    <section id="why-proteck" className="scroll-mt-24 bg-[#F5FAF6] py-28">
       <div className="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-2 lg:items-center">
         {/* Lado izquierdo */}
         <div>
-          <span className="font-heading uppercase tracking-[0.2em] text-primary">
-            ¿POR QUÉ PROTECKT?
+          <span className="font-heading uppercase tracking-[0.2em] text-primary font-bold">
+            | ¿POR QUÉ PROTECKT?
           </span>
 
           <h2 className="mt-4 font-heading text-5xl leading-tight text-black">
@@ -59,7 +59,7 @@ function WhyProteckt() {
 
           <div className="mt-10 flex flex-wrap gap-8">
             <div>
-              <h3 className="font-heading text-5xl text-primary">10+</h3>
+              <h3 className="font-heading text-5xl text-primary">5+</h3>
               <p className="mt-2 text-gray-600">Años de experiencia</p>
             </div>
 

@@ -70,12 +70,12 @@ export default function Testimonials() {
   );
 
   return (
-    <section className="bg-[#F7FBF8] py-28">
+    <section id="testimonials" className="scroll-mt-24 bg-[#F7FBF8] py-28">
       <div className="mx-auto max-w-7xl px-6">
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center">
-          <span className="font-heading uppercase tracking-[0.2em] text-primary">
-            TESTIMONIOS
+          <span className="font-heading uppercase tracking-[0.2em] text-primary font-bold">
+            | TESTIMONIOS
           </span>
 
           <h2 className="mt-4 font-heading text-6xl text-black">

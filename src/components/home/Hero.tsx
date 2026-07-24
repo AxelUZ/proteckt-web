@@ -3,7 +3,7 @@ import HeroBackground from "../../utils/HeroAnimatedBackground";
 
 export default function Hero() {
   return (
-    <section className="relative h-145 overflow-hidden">
+    <section id="hero" className="scroll-mt-24 relative h-180 overflow-hidden">
 
       {/* Background Images (rotating) */}
 
@@ -57,22 +57,26 @@ export default function Hero() {
 
           <div className="mt-2 flex flex-wrap gap-4">
 
-            <button
-              className="
-                rounded-xl
-                bg-primary
-                px-8
-                py-4
-                font-semibold
-                text-white
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:shadow-2xl
-              "
-            >
-              Solicitar inspección
-            </button>
+            <a
+            href="https://wa.link/wwikda"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              inline-flex
+              rounded-xl
+              bg-primary
+              px-8
+              py-4
+              font-semibold
+              text-white
+              transition-all
+              duration-300
+              hover:-translate-y-1
+              hover:shadow-2xl
+            "
+          >
+            Solicitar inspección
+          </a>
           </div>
 
         </div>

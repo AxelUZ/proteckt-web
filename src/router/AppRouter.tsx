@@ -10,6 +10,7 @@ import Process from "../components/home/Process";
 import Testimonials from "../components/home/Testimonials";
 import FAQ from "../components/home/FAQ";
 import CTA from "../components/home/CTA";
+import WhatsAppButton from "../components/ui/WhatsAppButton";
 
 function HomePage() {
   return (
@@ -27,6 +28,7 @@ function HomePage() {
       </main>
 
       <Footer />
+      <WhatsAppButton/>
     </>
   );
 }

@@ -1,11 +1,11 @@
 const rotatingWords = [
-  "Cucarachas.",
-  "Termitas.",
-  "Roedores.",
-  "Hormigas.",
-  "Mosquitos.",
-  "Arañas.",
-  "Alacranes.",
+  "CUCARACHAS.",
+  "TERMITAS.",
+  "ROEDORES.",
+  "HORMIGAS.",
+  "MOSQUITOS.",
+  "ARAÑAS.",
+  "ALACRANES.",
 ];
 
 export default rotatingWords;

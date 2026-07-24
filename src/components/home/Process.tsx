@@ -36,12 +36,12 @@ const steps = [
 
 function Process() {
   return (
-    <section className="bg-white py-28">
+    <section id="process" className="scroll-mt-24 bg-white py-28">
       <div className="mx-auto max-w-7xl px-6">
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center">
-          <span className="font-heading uppercase tracking-[0.2em] text-primary">
-            NUESTRO PROCESO
+          <span className="font-heading uppercase tracking-[0.2em] text-primary font-bold">
+            | NUESTRO PROCESO
           </span>
 
           <h2 className="mt-4 font-heading text-6xl text-black">

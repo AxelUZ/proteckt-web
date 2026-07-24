@@ -1,127 +1,73 @@
-import { Link } from "react-router-dom";
-
 type ServiceCardProps = {
   title: string;
   description: string;
-  href: string;
   icon?: string;
 };
 
-function ServiceCard({
-  title,
-  description,
-  href,
-  icon,
-}: ServiceCardProps) {
+function ServiceCard({ title, description, icon }: ServiceCardProps) {
   return (
-    <Link
-      to={href}
+    <div
       className="
         group
-        cursor-pointer
-        rounded-3xl
-        border
-        border-gray-200
-        bg-white
-        p-8
-        shadow-md
-        shadow-gray-200/60
+        rounded-lg
+        border-b
+        border-gray-400
+        py-8
         transition-all
         duration-300
-        hover:-translate-y-2
-        hover:border-transparent
         hover:bg-primary
-        hover:shadow-2xl
-        hover:shadow-primary/20
+        hover:px-6
       "
     >
-      <div
-        className="
-          mb-6
-          flex
-          h-16
-          w-16
-          items-center
-          justify-center
-          rounded-2xl
-          bg-secondary
-          transition-all
-          duration-300
-          group-hover:bg-white
-        "
-      >
-        {icon ? (
+      <div className="flex items-start gap-4">
+        {icon && (
           <img
             src={icon}
             alt={title}
             className="
-            h-8 
-            w-8 
-            transition-all 
-            duration-300
-            invert
-            group-hover:invert-0
-            "
-          />
-        ) : (
-          <div
-            className="
-              h-8
-              w-8
-              rounded-lg
-              bg-primary/40
+              mt-1
+              h-6
+              w-6
+              opacity-60
               transition-all
               duration-300
-              group-hover:bg-primary
+              group-hover:opacity-100
+              group-hover:invert
             "
           />
         )}
-      </div>
 
-      <div className="inline-block">
-        <h3
+        <div className="flex-1">
+          <h3
             className="
-            font-heading
-            text-3xl
-            text-black
-            transition-colors
-            duration-300
-            group-hover:text-white
+              font-heading
+              text-2xl
+              text-black
+              transition-colors
+              duration-300
+              group-hover:text-white
             "
-        >
+          >
             {title}
-        </h3>
+          </h3>
 
-        <div
+          <p
             className="
-            mt-3
-            h-1
-            w-0
-            rounded-full
-            bg-white
-            transition-all
-            duration-500
-            ease-out
-            group-hover:w-full
+              mt-3
+              font-body
+              text-base
+              leading-7
+              text-gray-600
+              transition-colors
+              duration-300
+              group-hover:text-white/90
             "
-        />
+          >
+            {description}
+          </p>
         </div>
-
-      <p
-        className="
-          mt-4
-          font-body
-          text-lg
-          leading-8
-          text-gray-600
-          transition-colors
-          duration-300
-          group-hover:text-white/90
-        "
-      >
-        {description}
-      </p>
-    </Link>
+      </div>
+    </div>
   );
 }
 

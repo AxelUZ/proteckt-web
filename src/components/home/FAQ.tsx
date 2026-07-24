@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 import FAQItem from "../ui/FAQItem";
 import faqData from "../../data/faqData";
@@ -8,15 +7,15 @@ export default function FAQ() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section className="bg-white py-28">
+    <section id="faq" className="scroll-mt-24 bg-white py-28">
       <div className="mx-auto grid max-w-7xl gap-20 px-6 lg:grid-cols-[350px_1fr]">
 
         {/* Left */}
 
         <div>
 
-          <span className="font-heading uppercase tracking-[0.2em] text-primary">
-            FAQ
+          <span className="font-heading uppercase tracking-[0.2em] text-primary font-bold">
+            | FAQ
           </span>
 
           <h2 className="mt-4 font-heading text-6xl text-black">
@@ -28,10 +27,11 @@ export default function FAQ() {
             Nuestro equipo estará encantado de ayudarte.
           </p>
 
-          <Link
-            to="/contact"
+          <a
+            href="https://wa.link/wwikda"
+            target="_blank"
+            rel="noopener noreferrer"
             className="
-              mt-10
               inline-flex
               rounded-xl
               bg-primary
@@ -42,11 +42,12 @@ export default function FAQ() {
               transition-all
               duration-300
               hover:-translate-y-1
-              hover:shadow-xl
+              hover:shadow-2xl
+              mt-8
             "
           >
             Contáctanos
-          </Link>
+          </a>
 
         </div>
 

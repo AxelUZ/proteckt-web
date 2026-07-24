@@ -30,7 +30,7 @@ function Footer() {
             {/* Redes Sociales */}
             <div className="mt-8 flex gap-4">
               <a
-                href="#"
+                href="https://www.facebook.com/ProteckControldePlagas"
                 aria-label="Facebook"
                 className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-800 transition hover:bg-primary"
               >
@@ -38,7 +38,7 @@ function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/proteckmxli/"
                 aria-label="Instagram"
                 className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-800 transition hover:bg-primary"
               >
@@ -46,7 +46,7 @@ function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://wa.link/wwikda"
                 aria-label="WhatsApp"
                 className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-800 transition hover:bg-primary"
               >
@@ -95,21 +95,21 @@ function Footer() {
             <ul className="space-y-5 font-body text-gray-400">
               <li>
                 <a
-                    href="tel:+526860000000"
+                    href="tel:6863939561"
                     className="flex items-center gap-3 text-gray-400 transition hover:text-primary"
                 >
                     <img src={phoneIcon} alt="" className="h-5 w-5 invert" />
-                    <span>+52 686 000 0000</span>
+                    <span>686 393 9561</span>
                 </a>
               </li>
 
               <li>
                 <a
-                    href="mailto:contacto@proteckt.com.mx"
+                    href="mailto:fumigacionesproteck@gmail.com"
                     className="flex items-center gap-3 text-gray-400 transition hover:text-primary"
                 >
                     <img src={emailIcon} alt="" className="h-5 w-5 invert" />
-                    <span>contacto@proteckt.com.mx</span>
+                    <span>fumigacionesproteck@gmail.com</span>
                 </a>
               </li>
 

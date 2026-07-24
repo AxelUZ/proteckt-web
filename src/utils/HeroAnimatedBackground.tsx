@@ -25,7 +25,7 @@ export default function HeroBackground() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
-          className="absolute inset-0 h-full w-full object-cover object-center"
+          className="shadow-2xl absolute inset-0 h-full w-full object-cover object-center"
         />
       </AnimatePresence>
     </div>
