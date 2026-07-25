@@ -1,11 +1,11 @@
 import ServiceCard from "../ui/ServiceCard";
 
-import iconCockroach from "../../assets/images/iconCockroach.svg";
-import iconMouse from "../../assets/images/iconMouse.svg";
-import iconAnt from "../../assets/images/iconAnt.svg";
-import iconChinche from "../../assets/images/iconChinche.svg";
-import iconSpider from "../../assets/images/iconSpider.svg";
-import iconFumigacion from "../../assets/images/iconFumigacion.svg";
+import iconCockroach from "../../assets/icons/iconCockroach.svg";
+import iconMouse from "../../assets/icons/iconMouse.svg";
+import iconAnt from "../../assets/icons/iconAnt.svg";
+import iconChinche from "../../assets/icons/iconChinche.svg";
+import iconSpider from "../../assets/icons/iconSpider.svg";
+import iconFumigacion from "../../assets/icons/iconFumigacion.svg";
 
 const services = [
   {

@@ -1,13 +1,13 @@
 import logo from "../../assets/images/logo.png";
 
-import facebookIcon from "../../assets/images/facebookIcon.svg";
-import instagramIcon from "../../assets/images/instagramIcon.svg";
-import whatsappIcon from "../../assets/images/whatsappIcon.svg";
+import facebookIcon from "../../assets/icons/facebookIcon.svg";
+import instagramIcon from "../../assets/icons/instagramIcon.svg";
+import whatsappIcon from "../../assets/icons/whatsappIcon.svg";
 
-import phoneIcon from "../../assets/images/phoneIcon.svg";
-import emailIcon from "../../assets/images/emailIcon.svg";
-import locationIcon from "../../assets/images/locationIcon.svg";
-import clockIcon from "../../assets/images/clockIcon.svg";
+import phoneIcon from "../../assets/icons/phoneIcon.svg";
+import emailIcon from "../../assets/icons/emailIcon.svg";
+import locationIcon from "../../assets/icons/locationIcon.svg";
+import clockIcon from "../../assets/icons/clockIcon.svg";
 
 function Footer() {
   return (
@@ -127,7 +127,7 @@ function Footer() {
 
               <li className="flex items-center gap-3">
                 <img src={clockIcon} alt="" className="h-5 w-5 invert" />
-                <span>Lunes a Sábado · 8:00 AM - 6:00 PM</span>
+                <span>Lunes a Domingo · 8:00 AM - 8:00 PM</span>
               </li>
             </ul>
           </div>

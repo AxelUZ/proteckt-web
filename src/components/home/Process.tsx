@@ -1,7 +1,7 @@
-import IconSearch from "../../assets/images/IconSearch.svg";
-import IconTube from "../../assets/images/IconTube.svg";
-import IconProtection from "../../assets/images/IconProtection.svg";
-import IconCalendar from "../../assets/images/IconCalendar.svg";
+import IconSearch from "../../assets/icons/IconSearch.svg";
+import IconTube from "../../assets/icons/IconTube.svg";
+import IconProtection from "../../assets/icons/IconProtection.svg";
+import IconCalendar from "../../assets/icons/IconCalendar.svg";
 
 const steps = [
   {

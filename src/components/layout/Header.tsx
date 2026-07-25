@@ -3,6 +3,7 @@ import logo from "../../assets/images/logo.png";
 
 const links = [
   { label: "Inicio", href: "#hero" },
+   { label: "Clientes", href: "#clientes" },
   { label: "Servicios", href: "#services" },
   { label: "¿Por qué Proteck?", href: "#why-proteck" },
   { label: "Proceso", href: "#process" },

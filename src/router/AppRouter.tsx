@@ -4,6 +4,7 @@ import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 
 import Hero from "../components/home/Hero";
+import Clients from "../components/home/Clients";
 import Services from "../components/home/Services";
 import WhyProteckt from "../components/home/WhyProteckt";
 import Process from "../components/home/Process";
@@ -19,6 +20,7 @@ function HomePage() {
 
       <main>
         <Hero />
+        <Clients/>
         <Services />
         <WhyProteckt/>
         <Process/>

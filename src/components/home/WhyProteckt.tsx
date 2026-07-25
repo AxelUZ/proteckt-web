@@ -1,8 +1,8 @@
-import IconShield from "../../assets/images/IconShield.svg";
-import IconPlate from "../../assets/images/IconPlate.svg";
-import clockIcon from "../../assets/images/clockIcon.svg";
-import IconDone from "../../assets/images/IconDone.svg";
-import IconTrophy from '../../assets/images/IconTrophy.svg';
+import IconShield from "../../assets/icons/IconShield.svg";
+import IconPlate from "../../assets/icons/IconPlate.svg";
+import clockIcon from "../../assets/icons/clockIcon.svg";
+import IconDone from "../../assets/icons/IconDone.svg";
+import IconTrophy from '../../assets/icons/IconTrophy.svg';
 
 function WhyProteckt() {
   const features = [

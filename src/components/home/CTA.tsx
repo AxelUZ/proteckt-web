@@ -1,4 +1,4 @@
-import PhoneIcon from "../../assets/images/phoneIcon.svg";
+import PhoneIcon from "../../assets/icons/phoneIcon.svg";
 
 export default function CTA() {
   return (
@@ -16,7 +16,7 @@ export default function CTA() {
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-white/75">
-            Agenda una inspección gratuita y deja que nuestros
+            Agenda una inspección y deja que nuestros
             expertos encuentren la mejor solución para mantener tu
             propiedad libre de plagas.
           </p>
