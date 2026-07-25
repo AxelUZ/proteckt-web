@@ -3,9 +3,11 @@ import HeroBackground from "../../utils/HeroAnimatedBackground";
 
 export default function Hero() {
   return (
-    <section id="hero" className="scroll-mt-24 relative h-180 overflow-hidden">
-
-      {/* Background Images (rotating) */}
+    <section
+      id="hero"
+      className="relative h-180 overflow-hidden scroll-mt-24"
+    >
+      {/* Background Images */}
 
       <HeroBackground />
 
@@ -16,73 +18,97 @@ export default function Hero() {
           absolute
           inset-0
           bg-linear-to-r
-          from-black/80
-          via-black/55
+          from-black/90
+          via-black/70
           to-transparent
+          lg:from-black/80
+          lg:via-black/55
         "
       />
 
       {/* Content */}
 
-      <div className="relative z-10 flex h-full items-center px-6 lg:pl-48 xl:pl-64">
-
-        <div className="max-w-xl">
+      <div
+        className="
+          relative
+          z-10
+          flex
+          h-full
+          items-center
+          px-6
+          pt-12
+          sm:pt-0
+          lg:pl-48
+          xl:pl-64
+        "
+      >
+        <div className="max-w-sm sm:max-w-md lg:max-w-xl">
           {/* Heading */}
 
           <div className="mt-6">
-            <h1 className="font-heading text-6xl font-bold leading-none text-white lg:text-7xl">
+            <h1 className="font-heading text-5xl font-bold leading-none text-white sm:text-6xl lg:text-7xl">
               CONTROL
             </h1>
 
-            <h2 className="font-heading text-6xl font-bold leading-none text-white lg:text-7xl">
+            <h2 className="font-heading text-5xl font-bold leading-none text-white sm:text-6xl lg:text-7xl">
               PROFESIONAL
             </h2>
 
-            <h3 className="font-heading text-6xl font-bold leading-none text-white lg:text-7xl">
+            <h3 className="font-heading text-5xl font-bold leading-none text-white sm:text-6xl lg:text-7xl">
               CONTRA
             </h3>
-
-            {/* Animated Word */}
 
             <AnimatedWord />
           </div>
 
           {/* Description */}
 
-          <p className="mt-8 max-w-md text-lg leading-8 text-white/80 text-bol font-bold">
-            Obten una cotización personalizada ahora mismo
-          </p>
-
-          {/* Buttons */}
-
-          <div className="mt-2 flex flex-wrap gap-4">
-
-            <a
-            href="https://wa.link/wwikda"
-            target="_blank"
-            rel="noopener noreferrer"
+          <p
             className="
-              inline-flex
-              rounded-xl
-              bg-primary
-              px-8
-              py-4
-              font-semibold
-              text-white
-              transition-all
-              duration-300
-              hover:-translate-y-1
-              hover:shadow-2xl
+              mt-6
+              max-w-md
+              font-body
+              text-base
+              font-bold
+              leading-7
+              text-white/80
+              sm:text-lg
+              sm:leading-8
             "
           >
-            Solicitar inspección
-          </a>
+            Obtén una cotización personalizada ahora mismo.
+          </p>
+
+          {/* Button */}
+
+          <div className="mt-6 flex flex-wrap gap-4">
+            <a
+              href="https://wa.link/wwikda"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                inline-flex
+                w-full
+                items-center
+                justify-center
+                rounded-xl
+                bg-primary
+                px-8
+                py-4
+                font-semibold
+                text-white
+                transition-all
+                duration-300
+                hover:-translate-y-1
+                hover:shadow-2xl
+                sm:w-auto
+              "
+            >
+              Solicitar inspección
+            </a>
           </div>
-
         </div>
-
       </div>
-
     </section>
   );
 }

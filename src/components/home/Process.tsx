@@ -1,69 +1,54 @@
-import IconSearch from "../../assets/icons/IconSearch.svg";
-import IconTube from "../../assets/icons/IconTube.svg";
-import IconProtection from "../../assets/icons/IconProtection.svg";
-import IconCalendar from "../../assets/icons/IconCalendar.svg";
+import { motion } from "framer-motion";
+import FadeIn from "../../utils/FadeIn";
 
-const steps = [
-  {
-    number: "01",
-    title: "Inspección",
-    description:
-      "Evaluamos tu propiedad para identificar el tipo de plaga, el nivel de infestación y los puntos de acceso.",
-    icon: IconSearch,
-  },
-  {
-    number: "02",
-    title: "Tratamiento",
-    description:
-      "Aplicamos tratamientos profesionales utilizando productos seguros y altamente efectivos.",
-    icon: IconTube,
-  },
-  {
-    number: "03",
-    title: "Prevención",
-    description:
-      "Implementamos medidas preventivas para reducir el riesgo de futuras infestaciones.",
-    icon: IconProtection,
-  },
-  {
-    number: "04",
-    title: "Seguimiento",
-    description:
-      "Realizamos seguimiento y brindamos recomendaciones para mantener tu espacio protegido.",
-    icon: IconCalendar,
-  },
-];
+import { processSteps } from "../../data/process";
 
 function Process() {
   return (
-    <section id="process" className="scroll-mt-24 bg-white py-28">
-      <div className="mx-auto max-w-7xl px-6">
-        {/* Header */}
-        <div className="mx-auto max-w-3xl text-center">
-          <span className="font-heading uppercase tracking-[0.2em] text-primary font-bold">
-            | NUESTRO PROCESO
-          </span>
+    <FadeIn>
+      <section id="process" className="scroll-mt-24 bg-white py-28">
+        <div className="mx-auto max-w-7xl px-6">
+          {/* Header */}
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="font-heading uppercase tracking-[0.2em] text-primary font-bold">
+              | NUESTRO PROCESO
+            </span>
 
-          <h2 className="mt-4 font-heading text-6xl text-black">
-            Así trabajamos para proteger tu hogar o negocio.
-          </h2>
+            <h2 className="mt-4 font-heading text-6xl text-black">
+              Así trabajamos para proteger tu hogar o negocio.
+            </h2>
 
-          <p className="mt-6 font-body text-lg leading-8 text-gray-600">
-            Un proceso profesional, transparente y efectivo diseñado para
-            eliminar las plagas y prevenir su regreso.
-          </p>
-        </div>
+            <p className="mt-6 font-body text-lg leading-8 text-gray-600">
+              Un proceso profesional, transparente y efectivo diseñado para
+              eliminar las plagas y prevenir su regreso.
+            </p>
+          </div>
 
-        {/* Timeline */}
-        <div className="relative mt-24">
-          {/* Línea */}
-          <div className="absolute left-0 top-8 hidden h-px w-full bg-gray-200 lg:block" />
+          {/* Timeline */}
+          <div className="relative mt-24">
+            {/* Línea animada */}
+            <motion.div
+              initial={{ scaleX: 0 }}
+              whileInView={{ scaleX: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              style={{ transformOrigin: "left" }}
+              className="absolute left-0 top-8 hidden h-px w-full bg-gray-200 lg:block"
+            />
 
-          <div className="grid gap-14 lg:grid-cols-4">
-            {steps.map((step) => {
-
-              return (
-                <div key={step.number} className="group relative">
+            <div className="grid gap-14 lg:grid-cols-4">
+              {processSteps.map((step, index) => (
+                <motion.div
+                  key={step.number}
+                  className="group relative"
+                  initial={{ opacity: 0, y: 25 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.5,
+                    delay: index * 0.2,
+                  }}
+                >
                   {/* Icono + número */}
                   <div className="relative flex items-center">
                     <div
@@ -76,25 +61,28 @@ function Process() {
                         items-center
                         justify-center
                         rounded-full
+                        border
+                        border-primary/20
                         bg-[#EEF7F0]
                         transition-all
                         duration-300
-                        group-hover:bg-primary
                         group-hover:-translate-y-1
+                        group-hover:bg-primary
+                        group-hover:shadow-lg
                       "
                     >
                       <img
                         src={step.icon}
                         alt={step.title}
                         className="
-                            h-8
-                            w-8
-                            transition-all
-                            duration-300
-                            filter-[invert(24%)_sepia(67%)_saturate(787%)_hue-rotate(84deg)_brightness(92%)_contrast(90%)]
-                            group-hover:filter-[invert(100%)]
+                          h-8
+                          w-8
+                          transition-all
+                          duration-300
+                          filter-[invert(24%)_sepia(67%)_saturate(787%)_hue-rotate(84deg)_brightness(92%)_contrast(90%)]
+                          group-hover:filter-[invert(100%)]
                         "
-                        />
+                      />
                     </div>
 
                     <span
@@ -105,6 +93,7 @@ function Process() {
                         text-gray-200
                         transition-all
                         duration-300
+                        group-hover:-translate-y-1
                         group-hover:text-primary/20
                       "
                     >
@@ -122,13 +111,13 @@ function Process() {
                       {step.description}
                     </p>
                   </div>
-                </div>
-              );
-            })}
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </FadeIn>
   );
 }
 

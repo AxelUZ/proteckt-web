@@ -7,6 +7,8 @@ import iconChinche from "../../assets/icons/iconChinche.svg";
 import iconSpider from "../../assets/icons/iconSpider.svg";
 import iconFumigacion from "../../assets/icons/iconFumigacion.svg";
 
+import FadeIn from "../../utils/FadeIn";
+
 const services = [
   {
     title: "Control de cucarachas",
@@ -48,52 +50,54 @@ const services = [
 
 function Services() {
   return (
-    <section id="services" className=" scroll-mt-24 bg-background py-28">
-      <div className="mx-auto max-w-7xl px-6">
-        <span className="font-heading font-bold uppercase tracking-[0.2em] text-primary">
-          | Nuestros servicios
-        </span>
+    <FadeIn>
+      <section id="services" className=" scroll-mt-24 bg-background py-28">
+        <div className="mx-auto max-w-7xl px-6">
+          <span className="font-heading font-bold uppercase tracking-[0.2em] text-primary">
+            | Nuestros servicios
+          </span>
 
-        <h2 className="mt-5 max-w-3xl font-heading text-5xl text-black">
-          Soluciones profesionales para cada tipo de plaga.
-        </h2>
+          <h2 className="mt-5 max-w-3xl font-heading text-5xl text-black">
+            Soluciones profesionales para cada tipo de plaga.
+          </h2>
 
-        <p className="mt-6 max-w-2xl font-body text-xl leading-9 text-gray-600">
-          Protegemos hogares, comercios e industrias con tratamientos
-          especializados para prevenir y eliminar plagas de forma segura y
-          efectiva.
-        </p>
+          <p className="mt-6 max-w-2xl font-body text-xl leading-9 text-gray-600">
+            Protegemos hogares, comercios e industrias con tratamientos
+            especializados para prevenir y eliminar plagas de forma segura y
+            efectiva.
+          </p>
 
-        <div className="mt-20 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {services.map((service) => (
-            <ServiceCard key={service.title} {...service} />
-          ))}
+          <div className="mt-20 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {services.map((service) => (
+              <ServiceCard key={service.title} {...service} />
+            ))}
+          </div>
+
+          <div className="mt-20 flex justify-center">
+            <a
+              href="https://wa.link/wwikda"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                inline-flex
+                rounded-xl
+                bg-primary
+                px-8
+                py-4
+                font-semibold
+                text-white
+                transition-all
+                duration-300
+                hover:-translate-y-1
+                hover:shadow-2xl
+              "
+            >
+              Solicitar cotización
+            </a>
+          </div>
         </div>
-
-        <div className="mt-20 flex justify-center">
-          <a
-            href="https://wa.link/wwikda"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-              inline-flex
-              rounded-xl
-              bg-primary
-              px-8
-              py-4
-              font-semibold
-              text-white
-              transition-all
-              duration-300
-              hover:-translate-y-1
-              hover:shadow-2xl
-            "
-          >
-            Solicitar cotización
-          </a>
-        </div>
-      </div>
-    </section>
+      </section>
+    </FadeIn>
   );
 }
 

@@ -15,7 +15,7 @@ export default function AnimatedWord() {
   }, []);
 
   return (
-    <div className="relative h-16 overflow-hidden lg:h-20">
+    <div className="relative h-12 overflow-hidden sm:h-16 lg:h-20">
       <AnimatePresence mode="wait">
         <motion.h3
           key={rotatingWords[index]}
@@ -26,7 +26,16 @@ export default function AnimatedWord() {
             duration: 0.45,
             ease: "easeInOut",
           }}
-          className="absolute font-heading text-6xl font-bold leading-none text-primary lg:text-7xl"
+          className="
+            absolute
+            font-heading
+            text-5xl
+            font-bold
+            leading-none
+            text-primary
+            sm:text-6xl
+            lg:text-7xl
+          "
         >
           {rotatingWords[index]}
         </motion.h3>
