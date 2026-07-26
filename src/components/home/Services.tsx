@@ -51,13 +51,20 @@ const services = [
 function Services() {
   return (
     <FadeIn>
-      <section id="services" className=" scroll-mt-24 bg-background py-28">
+      <section
+        id="services"
+        aria-labelledby="services-title"
+        className="scroll-mt-24 bg-background py-28"
+      >
         <div className="mx-auto max-w-7xl px-6">
           <span className="font-heading font-bold uppercase tracking-[0.2em] text-primary">
             | Nuestros servicios
           </span>
 
-          <h2 className="mt-5 max-w-3xl font-heading text-5xl text-black">
+          <h2
+            id="services-title"
+            className="mt-5 max-w-3xl font-heading text-5xl text-black"
+          >
             Soluciones profesionales para cada tipo de plaga.
           </h2>
 
@@ -67,7 +74,10 @@ function Services() {
             efectiva.
           </p>
 
-          <div className="mt-20 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div
+            className="mt-20 grid gap-6 md:grid-cols-2 xl:grid-cols-3"
+            role="list"
+          >
             {services.map((service) => (
               <ServiceCard key={service.title} {...service} />
             ))}
@@ -78,6 +88,7 @@ function Services() {
               href="https://wa.link/wwikda"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Solicitar cotización por WhatsApp"
               className="
                 inline-flex
                 rounded-xl

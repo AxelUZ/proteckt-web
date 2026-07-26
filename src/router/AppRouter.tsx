@@ -18,7 +18,7 @@ function HomePage() {
     <>
       <Header />
 
-      <main>
+      <main id="main-content">
         <Hero />
         <Clients/>
         <Services />

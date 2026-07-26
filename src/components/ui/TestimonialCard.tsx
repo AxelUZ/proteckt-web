@@ -16,7 +16,7 @@ function TestimonialCard({
   image,
 }: TestimonialCardProps) {
   return (
-    <div
+    <article
       className="
         h-full
         rounded-3xl
@@ -32,28 +32,38 @@ function TestimonialCard({
         hover:shadow-xl
       "
     >
-      <div className="flex gap-1">
-      {Array.from({ length: 5 }).map((_, index) => (
-        <Star
-          key={index}
-          size={18}
-          className={
-            index < rating
-              ? "fill-yellow-400 text-yellow-400"
-              : "text-gray-300"
-          }
-        />
-      ))}
-    </div>
+      <div
+        className="flex gap-1"
+        aria-label={`${rating} de 5 estrellas`}
+      >
+        {Array.from({ length: 5 }).map((_, index) => (
+          <Star
+            key={index}
+            size={18}
+            aria-hidden="true"
+            className={
+              index < rating
+                ? "fill-yellow-400 text-yellow-400"
+                : "text-gray-300"
+            }
+          />
+        ))}
+      </div>
 
-      <p className="font-body leading-8 text-gray-700">
-        "{comment}"
-      </p>
+      <blockquote className="mt-6">
+        <p className="font-body leading-8 text-gray-700">
+          "{comment}"
+        </p>
+      </blockquote>
 
       <div className="mt-8 flex items-center gap-4">
         <img
           src={image}
-          alt={name}
+          alt={`Foto de ${name}`}
+          loading="lazy"
+          decoding="async"
+          width={56}
+          height={56}
           className="h-14 w-14 rounded-full object-cover"
         />
 
@@ -62,10 +72,12 @@ function TestimonialCard({
             {name}
           </h3>
 
-          <p className="text-gray-500">{role}</p>
+          <cite className="not-italic text-gray-500">
+            {role}
+          </cite>
         </div>
       </div>
-    </div>
+    </article>
   );
 }
 

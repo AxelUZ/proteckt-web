@@ -6,15 +6,23 @@ import { processSteps } from "../../data/process";
 function Process() {
   return (
     <FadeIn>
-      <section id="process" className="scroll-mt-24 bg-white py-28">
+      <section
+        id="process"
+        aria-labelledby="process-title"
+        className="scroll-mt-24 bg-white py-28"
+      >
         <div className="mx-auto max-w-7xl px-6">
           {/* Header */}
+
           <div className="mx-auto max-w-3xl text-center">
-            <span className="font-heading uppercase tracking-[0.2em] text-primary font-bold">
+            <span className="font-heading font-bold uppercase tracking-[0.2em] text-primary">
               | NUESTRO PROCESO
             </span>
 
-            <h2 className="mt-4 font-heading text-6xl text-black">
+            <h2
+              id="process-title"
+              className="mt-4 font-heading text-6xl text-black"
+            >
               Así trabajamos para proteger tu hogar o negocio.
             </h2>
 
@@ -25,8 +33,10 @@ function Process() {
           </div>
 
           {/* Timeline */}
+
           <div className="relative mt-24">
             {/* Línea animada */}
+
             <motion.div
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
@@ -34,13 +44,14 @@ function Process() {
               transition={{ duration: 1 }}
               style={{ transformOrigin: "left" }}
               className="absolute left-0 top-8 hidden h-px w-full bg-gray-200 lg:block"
+              aria-hidden="true"
             />
 
-            <div className="grid gap-14 lg:grid-cols-4">
+            <ol className="grid gap-14 lg:grid-cols-4">
               {processSteps.map((step, index) => (
-                <motion.div
+                <motion.li
                   key={step.number}
-                  className="group relative"
+                  className="group relative list-none"
                   initial={{ opacity: 0, y: 25 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -50,6 +61,7 @@ function Process() {
                   }}
                 >
                   {/* Icono + número */}
+
                   <div className="relative flex items-center">
                     <div
                       className="
@@ -73,7 +85,12 @@ function Process() {
                     >
                       <img
                         src={step.icon}
-                        alt={step.title}
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                        decoding="async"
+                        width={32}
+                        height={32}
                         className="
                           h-8
                           w-8
@@ -86,6 +103,7 @@ function Process() {
                     </div>
 
                     <span
+                      aria-hidden="true"
                       className="
                         ml-4
                         font-heading
@@ -102,6 +120,7 @@ function Process() {
                   </div>
 
                   {/* Contenido */}
+
                   <div className="mt-8">
                     <h3 className="font-heading text-3xl text-black">
                       {step.title}
@@ -111,9 +130,9 @@ function Process() {
                       {step.description}
                     </p>
                   </div>
-                </motion.div>
+                </motion.li>
               ))}
-            </div>
+            </ol>
           </div>
         </div>
       </section>

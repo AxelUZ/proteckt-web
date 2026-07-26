@@ -7,6 +7,7 @@ function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"
+      title="Contactar por WhatsApp"
       className="
         fixed
         bottom-6
@@ -25,9 +26,16 @@ function WhatsAppButton() {
         duration-300
         hover:scale-110
         hover:shadow-xl
+        focus-visible:outline-none
+        focus-visible:ring-4
+        focus-visible:ring-white/40
       "
     >
-      <FaWhatsapp className="h-9 w-9" />
+      <FaWhatsapp
+        className="h-9 w-9"
+        aria-hidden="true"
+        focusable="false"
+      />
     </a>
   );
 }

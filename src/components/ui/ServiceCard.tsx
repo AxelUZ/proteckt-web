@@ -6,7 +6,7 @@ type ServiceCardProps = {
 
 function ServiceCard({ title, description, icon }: ServiceCardProps) {
   return (
-    <div
+    <article
       className="
         group
         rounded-lg
@@ -23,7 +23,12 @@ function ServiceCard({ title, description, icon }: ServiceCardProps) {
         {icon && (
           <img
             src={icon}
-            alt={title}
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            width={24}
+            height={24}
             className="
               mt-1
               h-6
@@ -67,7 +72,7 @@ function ServiceCard({ title, description, icon }: ServiceCardProps) {
           </p>
         </div>
       </div>
-    </div>
+    </article>
   );
 }
 

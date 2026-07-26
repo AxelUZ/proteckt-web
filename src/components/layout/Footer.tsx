@@ -11,14 +11,25 @@ import clockIcon from "../../assets/icons/clockIcon.svg";
 
 function Footer() {
   return (
-    <footer className="bg-black text-white">
+    <footer
+      aria-labelledby="footer-title"
+      className="bg-black text-white"
+    >
+      <h2 id="footer-title" className="sr-only">
+        Información de contacto de Proteck
+      </h2>
+
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-4">
           {/* Logo */}
           <div>
             <img
               src={logo}
-              alt="Proteckt"
+              alt="Proteck"
+              loading="lazy"
+              decoding="async"
+              width={180}
+              height={64}
               className="mb-6 h-16 w-auto"
             />
 
@@ -31,26 +42,59 @@ function Footer() {
             <div className="mt-8 flex gap-4">
               <a
                 href="https://www.facebook.com/ProteckControldePlagas"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
                 className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-800 transition hover:bg-primary"
               >
-                 <img src={facebookIcon} alt="Facebook" className="h-10 w-10 invert" /> 
+                <img
+                  src={facebookIcon}
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  width={40}
+                  height={40}
+                  className="h-10 w-10 invert"
+                />
               </a>
 
               <a
                 href="https://www.instagram.com/proteckmxli/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-800 transition hover:bg-primary"
               >
-                 <img src={instagramIcon} alt="Instagram" className="h-10 w-10 invert" />
+                <img
+                  src={instagramIcon}
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  width={40}
+                  height={40}
+                  className="h-10 w-10 invert"
+                />
               </a>
 
               <a
                 href="https://wa.link/wwikda"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="WhatsApp"
                 className="flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-800 transition hover:bg-primary"
               >
-                <img src={whatsappIcon} alt="WhatsApp" className="h-10 w-10 invert" />
+                <img
+                  src={whatsappIcon}
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  width={40}
+                  height={40}
+                  className="h-10 w-10 invert"
+                />
               </a>
             </div>
           </div>
@@ -95,38 +139,74 @@ function Footer() {
             <ul className="space-y-5 font-body text-gray-400">
               <li>
                 <a
-                    href="tel:6863939561"
-                    className="flex items-center gap-3 text-gray-400 transition hover:text-primary"
+                  href="tel:+526863939561"
+                  className="flex items-center gap-3 text-gray-400 transition hover:text-primary"
                 >
-                    <img src={phoneIcon} alt="" className="h-5 w-5 invert" />
-                    <span>686 393 9561</span>
+                  <img
+                    src={phoneIcon}
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    width={20}
+                    height={20}
+                    className="h-5 w-5 invert"
+                  />
+                  <span>686 393 9561</span>
                 </a>
               </li>
 
               <li>
                 <a
-                    href="mailto:fumigacionesproteck@gmail.com"
-                    className="flex items-center gap-3 text-gray-400 transition hover:text-primary"
+                  href="mailto:fumigacionesproteck@gmail.com"
+                  className="flex items-center gap-3 text-gray-400 transition hover:text-primary"
                 >
-                    <img src={emailIcon} alt="" className="h-5 w-5 invert" />
-                    <span>fumigacionesproteck@gmail.com</span>
+                  <img
+                    src={emailIcon}
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    width={20}
+                    height={20}
+                    className="h-5 w-5 invert"
+                  />
+                  <span>fumigacionesproteck@gmail.com</span>
                 </a>
               </li>
 
               <li>
                 <a
-                    href="https://maps.google.com/?q=Proteckt+Mexicali"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 text-gray-400 transition hover:text-primary"
+                  href="https://maps.google.com/?q=Proteck+Mexicali"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-400 transition hover:text-primary"
                 >
-                    <img src={locationIcon} alt="" className="h-5 w-5 invert" />
-                    <span>Mexicali, Baja California</span>
+                  <img
+                    src={locationIcon}
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    width={20}
+                    height={20}
+                    className="h-5 w-5 invert"
+                  />
+                  <span>Mexicali, Baja California</span>
                 </a>
               </li>
 
               <li className="flex items-center gap-3">
-                <img src={clockIcon} alt="" className="h-5 w-5 invert" />
+                <img
+                  src={clockIcon}
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  width={20}
+                  height={20}
+                  className="h-5 w-5 invert"
+                />
                 <span>Lunes a Domingo · 8:00 AM - 8:00 PM</span>
               </li>
             </ul>
@@ -137,15 +217,21 @@ function Footer() {
         <div className="mt-16 border-t border-zinc-800 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="font-body text-sm text-gray-500">
-              © {new Date().getFullYear()} Proteckt. Todos los derechos reservados.
+              © {new Date().getFullYear()} Proteck. Todos los derechos reservados.
             </p>
 
             <div className="flex gap-6 font-body text-sm text-gray-500">
-              <a href="#" className="transition hover:text-white">
+              <a
+                href="/privacy"
+                className="transition hover:text-white"
+              >
                 Aviso de privacidad
               </a>
 
-              <a href="#" className="transition hover:text-white">
+              <a
+                href="/terms"
+                className="transition hover:text-white"
+              >
                 Términos y condiciones
               </a>
             </div>
@@ -155,5 +241,4 @@ function Footer() {
     </footer>
   );
 }
-
 export default Footer;

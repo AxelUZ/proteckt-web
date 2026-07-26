@@ -5,14 +5,13 @@ export default function Hero() {
   return (
     <section
       id="hero"
+      aria-labelledby="hero-title"
       className="relative h-180 overflow-hidden scroll-mt-24"
     >
       {/* Background Images */}
-
       <HeroBackground />
 
       {/* Overlay */}
-
       <div
         className="
           absolute
@@ -27,7 +26,6 @@ export default function Hero() {
       />
 
       {/* Content */}
-
       <div
         className="
           relative
@@ -46,17 +44,16 @@ export default function Hero() {
           {/* Heading */}
 
           <div className="mt-6">
-            <h1 className="font-heading text-5xl font-bold leading-none text-white sm:text-6xl lg:text-7xl">
-              CONTROL
+            <h1
+              id="hero-title"
+              className="font-heading text-5xl font-bold leading-none text-white sm:text-6xl lg:text-7xl"
+            >
+              <span>CONTROL</span>
+              <br />
+              <span>PROFESIONAL</span>
+              <br />
+              <span>CONTRA</span>
             </h1>
-
-            <h2 className="font-heading text-5xl font-bold leading-none text-white sm:text-6xl lg:text-7xl">
-              PROFESIONAL
-            </h2>
-
-            <h3 className="font-heading text-5xl font-bold leading-none text-white sm:text-6xl lg:text-7xl">
-              CONTRA
-            </h3>
 
             <AnimatedWord />
           </div>
@@ -86,6 +83,7 @@ export default function Hero() {
               href="https://wa.link/wwikda"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Solicitar inspección por WhatsApp"
               className="
                 inline-flex
                 w-full

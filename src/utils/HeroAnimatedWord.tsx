@@ -15,9 +15,12 @@ export default function AnimatedWord() {
   }, []);
 
   return (
-    <div className="relative h-12 overflow-hidden sm:h-16 lg:h-20">
+    <div
+      aria-live="polite"
+      className="relative mt-2 h-12 overflow-hidden sm:h-16 lg:h-20"
+    >
       <AnimatePresence mode="wait">
-        <motion.h3
+        <motion.span
           key={rotatingWords[index]}
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -38,7 +41,7 @@ export default function AnimatedWord() {
           "
         >
           {rotatingWords[index]}
-        </motion.h3>
+        </motion.span>
       </AnimatePresence>
     </div>
   );

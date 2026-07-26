@@ -24,15 +24,22 @@ export default function Testimonials() {
 
   return (
     <FadeIn>
-      <section id="testimonials" className="scroll-mt-24 bg-[#F7FBF8] py-28">
+      <section
+        id="testimonials"
+        aria-labelledby="testimonials-title"
+        className="scroll-mt-24 bg-[#F7FBF8] py-28"
+      >
         <div className="mx-auto max-w-7xl px-6">
           {/* Header */}
           <div className="mx-auto max-w-3xl text-center">
-            <span className="font-heading uppercase tracking-[0.2em] text-primary font-bold">
+            <span className="font-heading font-bold uppercase tracking-[0.2em] text-primary">
               | TESTIMONIOS
             </span>
 
-            <h2 className="mt-4 font-heading text-6xl text-black">
+            <h2
+              id="testimonials-title"
+              className="mt-4 font-heading text-6xl text-black"
+            >
               Lo que opinan nuestros clientes
             </h2>
 
@@ -43,18 +50,22 @@ export default function Testimonials() {
           </div>
 
           {/* Carousel */}
-          <div className="overflow-hidden mt-20" ref={emblaRef}>
-            <div className="flex">
-              {testimonials.map((testimonial, index) => (
+          <div
+            className="mt-20 overflow-hidden"
+            ref={emblaRef}
+            aria-label="Carrusel de testimonios"
+          >
+            <div className="flex" role="list">
+              {testimonials.map((testimonial) => (
                 <div
-                  key={index}
+                  key={`${testimonial.name}-${testimonial.role}`}
                   className="
                     flex-[0_0_90%]
+                    px-3
                     sm:flex-[0_0_75%]
                     md:flex-[0_0_55%]
                     lg:flex-[0_0_42%]
                     xl:flex-[0_0_36%]
-                    px-3
                   "
                 >
                   <TestimonialCard {...testimonial} />

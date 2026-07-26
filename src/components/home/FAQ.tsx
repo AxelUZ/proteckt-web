@@ -10,31 +10,38 @@ export default function FAQ() {
 
   return (
     <FadeIn>
-      <section id="faq" className="scroll-mt-24 bg-white py-28">
+      <section
+        id="faq"
+        aria-labelledby="faq-title"
+        className="scroll-mt-24 bg-white py-28"
+      >
         <div className="mx-auto grid max-w-7xl gap-20 px-6 lg:grid-cols-[350px_1fr]">
-
           {/* Left */}
 
           <div>
-
-            <span className="font-heading uppercase tracking-[0.2em] text-primary font-bold">
+            <span className="font-heading font-bold uppercase tracking-[0.2em] text-primary">
               | FAQ
             </span>
 
-            <h2 className="mt-4 font-heading text-6xl text-black">
-              Preguntas Frecuentes
+            <h2
+              id="faq-title"
+              className="mt-4 font-heading text-6xl text-black"
+            >
+              Preguntas frecuentes
             </h2>
 
             <p className="mt-8 text-lg leading-8 text-gray-600">
-              ¿No encontraste la respuesta que buscabas?
-              Nuestro equipo estará encantado de ayudarte.
+              ¿No encontraste la respuesta que buscabas? Nuestro equipo estará
+              encantado de ayudarte.
             </p>
 
             <a
               href="https://wa.link/wwikda"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Contactar por WhatsApp"
               className="
+                mt-8
                 inline-flex
                 rounded-xl
                 bg-primary
@@ -46,33 +53,24 @@ export default function FAQ() {
                 duration-300
                 hover:-translate-y-1
                 hover:shadow-2xl
-                mt-8
               "
             >
               Contáctanos
             </a>
-
           </div>
 
           {/* Right */}
 
           <div>
-
             {faqData.map((faq, index) => (
-
               <FAQItem
                 key={faq.question}
                 {...faq}
                 isOpen={open === index}
-                onClick={() =>
-                  setOpen(open === index ? -1 : index)
-                }
+                onClick={() => setOpen(open === index ? -1 : index)}
               />
-
             ))}
-
           </div>
-
         </div>
       </section>
     </FadeIn>

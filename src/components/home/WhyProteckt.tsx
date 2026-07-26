@@ -2,7 +2,7 @@ import IconShield from "../../assets/icons/IconShield.svg";
 import IconPlate from "../../assets/icons/IconPlate.svg";
 import clockIcon from "../../assets/icons/clockIcon.svg";
 import IconDone from "../../assets/icons/IconDone.svg";
-import IconTrophy from '../../assets/icons/IconTrophy.svg';
+import IconTrophy from "../../assets/icons/IconTrophy.svg";
 
 import FadeIn from "../../utils/FadeIn";
 
@@ -42,15 +42,23 @@ function WhyProteckt() {
 
   return (
     <FadeIn>
-      <section id="why-proteck" className="scroll-mt-24 bg-[#F5FAF6] py-28">
+      <section
+        id="why-proteck"
+        aria-labelledby="why-proteck-title"
+        className="scroll-mt-24 bg-[#F5FAF6] py-28"
+      >
         <div className="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-2 lg:items-center">
           {/* Lado izquierdo */}
+
           <div>
-            <span className="font-heading uppercase tracking-[0.2em] text-primary font-bold">
-              | ¿POR QUÉ PROTECKT?
+            <span className="font-heading font-bold uppercase tracking-[0.2em] text-primary">
+              | ¿POR QUÉ PROTECK?
             </span>
 
-            <h2 className="mt-4 font-heading text-5xl leading-tight text-black">
+            <h2
+              id="why-proteck-title"
+              className="mt-4 font-heading text-5xl leading-tight text-black"
+            >
               La tranquilidad de dejar las plagas en manos de expertos.
             </h2>
 
@@ -79,9 +87,10 @@ function WhyProteckt() {
           </div>
 
           {/* Lado derecho */}
+
           <div className="space-y-6">
             {features.map((feature) => (
-              <div
+              <article
                 key={feature.title}
                 className="
                   flex
@@ -97,7 +106,7 @@ function WhyProteckt() {
                   duration-300
                   hover:-translate-y-1
                   hover:shadow-xl
-              "
+                "
               >
                 <div
                   className="
@@ -109,13 +118,17 @@ function WhyProteckt() {
                     justify-center
                     rounded-full
                     bg-primary/10
-                    text-2xl
                   "
                 >
                   <img
-                  src={feature.icon}
-                  alt={feature.title}
-                  className="h-7 w-7"
+                    src={feature.icon}
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    width={28}
+                    height={28}
+                    className="h-7 w-7"
                   />
                 </div>
 
@@ -128,7 +141,7 @@ function WhyProteckt() {
                     {feature.description}
                   </p>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
