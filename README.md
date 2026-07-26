@@ -33,9 +33,7 @@ npm run lint
 src/
 ├── assets/
 ├── components/
-├── pages/
+├── data/
 ├── router/
-├── services/
-├── types/
 └── utils/
 ```

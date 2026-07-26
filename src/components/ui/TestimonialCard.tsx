@@ -1,6 +1,9 @@
+import { Star } from "lucide-react";
+
 type TestimonialCardProps = {
   name: string;
   role: string;
+  rating: number;
   comment: string;
   image: string;
 };
@@ -8,6 +11,7 @@ type TestimonialCardProps = {
 function TestimonialCard({
   name,
   role,
+  rating,
   comment,
   image,
 }: TestimonialCardProps) {
@@ -28,9 +32,19 @@ function TestimonialCard({
         hover:shadow-xl
       "
     >
-      <div className="mb-6 text-xl tracking-wider text-yellow-400">
-        ★★★★★
-      </div>
+      <div className="flex gap-1">
+      {Array.from({ length: 5 }).map((_, index) => (
+        <Star
+          key={index}
+          size={18}
+          className={
+            index < rating
+              ? "fill-yellow-400 text-yellow-400"
+              : "text-gray-300"
+          }
+        />
+      ))}
+    </div>
 
       <p className="font-body leading-8 text-gray-700">
         "{comment}"

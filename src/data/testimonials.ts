@@ -1,48 +1,58 @@
-import avatar1 from "../assets/images/avatar1.webp";
-import avatar2 from "../assets/images/avatar2.webp";
-import avatar3 from "../assets/images/avatar3.webp";
+import avatar1 from "../assets/images/Marisol.webp";
+import avatar2 from "../assets/images/EduardoG.webp";
+import avatar3 from "../assets/images/Brenda.webp";
+import avatar4 from "../assets/images/JorgeA.webp";
+import avatar5 from "../assets/images/Karla.webp";
+import avatar6 from "../assets/images/Luis.webp"
+
 
 export const testimonials = [
   {
-    name: "María González",
+    name: "Marisol C.",
     role: "Propietaria de vivienda",
     image: avatar1,
+    rating: 5,
     comment:
-      "Excelente atención desde el primer contacto. Fueron puntuales, profesionales y explicaron todo el proceso de manera muy clara.",
+      "Los contacté por un problema de hormigas que ya tenía semanas. Fueron muy amables y explicaron todo antes de empezar. Hasta ahora no han vuelto a salir.",
   },
   {
-    name: "Carlos Ibarra",
-    role: "Dueño de restaurante",
+    name: "Eduardo G.",
+    role: "Propietario de vivienda",
     image: avatar2,
+    rating: 5,
     comment:
-      "Buscábamos una empresa seria para el control de plagas y Proteck superó nuestras expectativas. Muy recomendados.",
+      "Muy buen servicio. Llegaron a la hora acordada y dejaron todo limpio. Se nota que saben lo que hacen.",
   },
   {
-    name: "Laura Méndez",
-    role: "Gerente administrativa",
+    name: "Brenda López",
+    role: "Propietaria de vivienda",
     image: avatar3,
+    rating: 4,
     comment:
-      "El equipo fue muy amable y transmitió mucha confianza. Se nota la experiencia y el compromiso con sus clientes.",
+      "Nos ayudaron con unas cucarachas que ya estaban apareciendo muy seguido. Desde la primera visita vimos mucha diferencia. Los recomiendo.",
   },
   {
-    name: "Javier Morales",
-    role: "Administrador de condominio",
-    image: avatar1,
+    name: "Jorge A.",
+    role: "Administrador de local comercial",
+    image: avatar4,
+    rating: 5,
     comment:
-      "Recibimos un servicio profesional de principio a fin. Sin duda volveríamos a contratarlos cuando lo necesitemos.",
+      "Excelente atención y seguimiento. Nos apoyaron con el control de plagas para el negocio y todo quedó en orden. Muy buena experiencia.",
   },
   {
-    name: "Patricia Hernández",
-    role: "Propietaria de negocio",
-    image: avatar2,
+    name: "Karla Hernández",
+    role: "Propietaria de vivienda",
+    image: avatar5,
+    rating: 5,
     comment:
-      "Nos gustó mucho la atención y el seguimiento. Todo el proceso fue muy organizado y el personal siempre fue muy atento.",
+      "Me gustó que respondieron rápido cuando pedí información. Fueron muy atentos durante la visita y resolvieron el problema sin complicaciones.",
   },
   {
-    name: "Miguel Castro",
-    role: "Gerente de operaciones",
-    image: avatar3,
+    name: "Luis Manuel",
+    role: "Propietario de restaurante",
+    image: avatar6,
+    rating: 4,
     comment:
-      "Una empresa responsable y confiable. Desde la cotización hasta la visita todo fue rápido y con excelente atención.",
+      "Buen servicio y trato muy profesional. Nos ayudó bastante para mantener el control de plagas en el local y cumplir con lo que nos solicitan en las inspecciones.",
   },
 ];
