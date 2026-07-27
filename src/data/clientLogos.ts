@@ -1,14 +1,14 @@
-import chavez from "../assets/logos/chavez.png";
-import cover from "../assets/logos/cover.png";
-import galeria from "../assets/logos/galeria.png";
-import leones from "../assets/logos/leones.png";
-import phohouse from "../assets/logos/phohouse.png";
-import sanite from "../assets/logos/sanite.png";
-import seguproin from "../assets/logos/seguproin.png";
-import supplements from "../assets/logos/supplements.png";
-import thrifty from "../assets/logos/thrifty.png";
-import triangulo from "../assets/logos/triangulo.png";
-import umai from "../assets/logos/umai.png";
+import chavez from "../assets/logos/chavez.webp";
+import cover from "../assets/logos/cover.webp";
+import galeria from "../assets/logos/galeria.webp";
+import leones from "../assets/logos/leones.webp";
+import phohouse from "../assets/logos/phohouse.webp";
+import sanite from "../assets/logos/sanite.webp";
+import seguproin from "../assets/logos/seguproin.webp";
+import supplements from "../assets/logos/supplements.webp";
+import thrifty from "../assets/logos/thrifty.webp";
+import triangulo from "../assets/logos/triangulo.webp";
+import umai from "../assets/logos/umai.webp";
 
 export const clientLogos = [
   chavez,
