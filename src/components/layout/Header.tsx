@@ -9,6 +9,7 @@ const links = [
   { label: "Clientes", href: "#clientes" },
   { label: "Servicios", href: "#services" },
   { label: "¿Por qué Proteck?", href: "#why-proteck" },
+  { label: "Certificaciones", href: "#certifications" },
   { label: "Proceso", href: "#process" },
   { label: "Testimonios", href: "#testimonials" },
   { label: "FAQ", href: "#faq" },

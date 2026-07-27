@@ -27,7 +27,7 @@ export default function Testimonials() {
       <section
         id="testimonials"
         aria-labelledby="testimonials-title"
-        className="scroll-mt-24 bg-[#F7FBF8] py-28"
+        className="scroll-mt-24 bg-background py-28"
       >
         <div className="mx-auto max-w-7xl px-6">
           {/* Header */}

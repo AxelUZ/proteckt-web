@@ -7,6 +7,7 @@ import Hero from "../components/home/Hero";
 import Clients from "../components/home/Clients";
 import Services from "../components/home/Services";
 import WhyProteckt from "../components/home/WhyProteckt";
+import Certifications from "../components/home/Certifications";
 import Process from "../components/home/Process";
 import Testimonials from "../components/home/Testimonials";
 import FAQ from "../components/home/FAQ";
@@ -23,6 +24,7 @@ function HomePage() {
         <Clients/>
         <Services />
         <WhyProteckt/>
+        <Certifications/>
         <Process/>
         <Testimonials/>
         <FAQ/>

@@ -9,7 +9,7 @@ function Process() {
       <section
         id="process"
         aria-labelledby="process-title"
-        className="scroll-mt-24 bg-white py-28"
+        className="scroll-mt-24 bg-[#F5FAF6] py-28"
       >
         <div className="mx-auto max-w-7xl px-6">
           {/* Header */}
