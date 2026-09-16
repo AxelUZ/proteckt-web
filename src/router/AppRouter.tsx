@@ -1,46 +1,15 @@
 import { Routes, Route } from "react-router-dom";
 
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
-
-import Hero from "../components/home/Hero";
-import Clients from "../components/home/Clients";
-import Services from "../components/home/Services";
-import WhyProteckt from "../components/home/WhyProteckt";
-import Certifications from "../components/home/Certifications";
-import Process from "../components/home/Process";
-import Testimonials from "../components/home/Testimonials";
-import FAQ from "../components/home/FAQ";
-import CTA from "../components/home/CTA";
-import WhatsAppButton from "../components/ui/WhatsAppButton";
-
-function HomePage() {
-  return (
-    <>
-      <Header />
-
-      <main id="main-content">
-        <Hero />
-        <Clients/>
-        <Services />
-        <WhyProteckt/>
-        <Certifications/>
-        <Process/>
-        <Testimonials/>
-        <FAQ/>
-        <CTA/>
-      </main>
-
-      <Footer />
-      <WhatsAppButton/>
-    </>
-  );
-}
+import Home from "../pages/Home";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
+import Terms from "../pages/Terms";
 
 function AppRouter() {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/aviso-de-privacidad" element={<PrivacyPolicy />} />
+      <Route path="/terminos-y-condiciones" element={<Terms />} />
     </Routes>
   );
 }

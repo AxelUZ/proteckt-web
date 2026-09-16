@@ -8,6 +8,7 @@ import phoneIcon from "../../assets/icons/phoneIcon.svg";
 import emailIcon from "../../assets/icons/emailIcon.svg";
 import locationIcon from "../../assets/icons/locationIcon.svg";
 import clockIcon from "../../assets/icons/clockIcon.svg";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -221,19 +222,19 @@ function Footer() {
             </p>
 
             <div className="flex gap-6 font-body text-sm text-gray-500">
-              <a
-                href="/privacy"
+              <Link
+                to="/aviso-de-privacidad"
                 className="transition hover:text-white"
               >
                 Aviso de privacidad
-              </a>
+              </Link>
 
-              <a
-                href="/terms"
+              <Link
+                to="/terminos-y-condiciones"
                 className="transition hover:text-white"
               >
                 Términos y condiciones
-              </a>
+              </Link>
             </div>
           </div>
         </div>
